@@ -1,0 +1,21 @@
+plugins {
+    id 'war'
+    id 'java'
+}
+
+group 'org.czq.gradle'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    implementation group: 'org.mybatis', name: 'mybatis', version: '3.4.6'
+
+}
+
+test {
+    useJUnitPlatform()
+}
